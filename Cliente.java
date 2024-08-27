@@ -104,7 +104,7 @@ public class Cliente{
 		return false;
 	}
 
-	private boolean comparaId(String tentativa){
+	public boolean comparaId(String tentativa){
 		// Compara um determinada String (tentativa) com o id do cliente e retorno se ressoam.
 
 		if (tentativa.equals(id)) return true;

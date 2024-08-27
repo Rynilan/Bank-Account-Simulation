@@ -1,3 +1,4 @@
+import java.text.Format;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -60,6 +61,9 @@ public class Acesso{
 				escolha = input.nextLine();
 				if (!(erro.okGeral(escolha, "0123456789", 3))) {
 					System.out.println("ID não endereça conta alguma.");
+					break;
+				} else if (cliente.comparaId(escolha)) {
+					System.out.println("Não é possível transferir para si mesmo.");
 					break;
 				}
 				valor = cliente.getSaldo();
