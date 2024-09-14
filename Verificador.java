@@ -1,4 +1,4 @@
-class Verificador{
+class Verificador {
 	// Classe que contém os métodos de verificação de dados.
 
 	public boolean okReal(String numero){
